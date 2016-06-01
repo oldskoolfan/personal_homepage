@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	background-color: #f9f9f9;
+	font: normal 1em Arial;
+	color: #333333;
+	min-width: 980px;
+	position: relative;
+}
+
+#PageWrapper {
+	width: 60%;
+	margin: 3% auto;
+}
+
+h1, h2, h3, h6 { text-align: center; margin: 0; }
+
+a {
+	width: 125px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.edit-product a { width: auto; }
+
+td a { width: auto; display: inline; }
+
+.greeting {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	text-align: right;
+	padding: 20px;
+}
+
+.greeting a {
+	width: auto;
+	text-align: inherit;
+	line-height: 1.5em;
+}
+
+form {
+	padding: 20px;
+	font-size: 1.5rem;
+	width: 550px;
+	margin: 0 auto;
+}
+
+.orders {
+	padding: 20px;
+	width: 700px;
+	margin: 0 auto;
+}
+.orders td { text-align: center; }
+
+label {
+	display: block;	
+	margin: 10px 0;
+}
+
+input[type=text], input[type=password], select {
+	float: right;
+	width: 250px;
+	padding: 2px 0 2px 5px;
+}
+input[name|=quantity] { width: 60px; }
+select[name=beer] { width: 150px; }
+input[name=state],input[name=quantity] { width: 60px; }
+input[name=zipcode] { width: 120px; }
+input, select { font: inherit; font-size: 1rem; }
+input[type=submit] { 
+	display: block;
+	width: 120px;
+	margin: 0 auto; 
+}
+option { text-align: right; }
+
+.confirm {
+	padding: 20px;
+	width: 550px;
+	margin: 0 auto;
+}
+
+.error {
+	color: red;
+	width: 550px;
+	margin: 20px auto;
+	padding-left: 50px;
+}
+
+table { width: 100%; }
+
+th { text-align: center; font-size: 0.9em;}
+
+td { padding: 0 5px; }
+form td { font-size: 0.8em; }
+
+/* products table */
+table#ProductTable th, table#OrderTable th { text-align: left; }
+
+table#ProfileTable { width: 250px; margin: 30px auto; }
+table#ProfileTable td { margin: 0; border: 1px solid #ccc; }
+
+

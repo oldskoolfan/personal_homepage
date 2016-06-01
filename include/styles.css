@@ -1,0 +1,38 @@
+@import url('https://necolas.github.io/normalize.css/4.1.1/normalize.css');
+html, body {
+  height: 100%;
+  overflow: auto;
+  font: 1em normal Arial, sans-serif;
+}
+main, footer {
+  overflow: auto;
+  text-align: center;
+}
+main {
+  height: 95%;
+}
+footer {
+  height: 5%;
+  font-size: 0.8em;
+  color: gray;
+}
+
+a {
+  color: #5789b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav.vert a {
+  display: block;
+}
+nav.vert div {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+nav.vert div, nav.vert a {
+  padding: 5px 0;
+}

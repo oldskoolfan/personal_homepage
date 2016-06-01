@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	padding-bottom: 60px;
+}
+h1, h4 {
+	text-align: center;
+}
+section {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+section:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+div.row:not(:last-of-type) {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+div.cell {
+	position: relative;
+	width: 14.2%;
+	float: left;
+	height: 250px;
+	padding: 10px;
+}
+div.cell div.day-of-month {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+div.cell div.timeslot-wrapper {
+	height: 100%;
+	padding-bottom: 20px;
+	overflow-y: auto;
+}
+div.cell div.timeslot-wrapper a {
+	text-decoration: none;
+	color: #000;
+}
+div.cell div.timeslot-wrapper li {
+	line-height: 24px;
+	padding-left: 5px;
+	list-style: none;
+	cursor: pointer;
+}
+div.cell div.timeslot-wrapper li:hover {
+	background-color: #f8f8f8;
+}
+div.cell div.timeslot-wrapper li.appt-remove {
+	background-color: #90C3D4;
+}
+div.cell:not(:last-of-type) {
+	border-right: 1px solid #ccc;
+}
+div.cell.has-appt {
+	border: 3px solid #ABBDFF !important;
+}
+div.page-links {
+	margin: 20px 0px;
+	line-height: 32px;
+	width: 100%;
+	text-align: center;
+}
+div.page-links a:first-of-type {
+	margin-right: 10px;
+}
+div.page-links a:last-of-type {
+	margin-left: 10px;
+}
