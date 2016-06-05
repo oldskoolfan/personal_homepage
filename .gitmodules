@@ -7,3 +7,6 @@
 [submodule "csci2412/samples/ecommerce"]
 	path = csci2412/samples/ecommerce
 	url = https://github.com/oldskoolfan/ecommerce.git
+[submodule "games/tanks"]
+	path = games/tanks
+	url = https://github.com/oldskoolfan/tanks.git
