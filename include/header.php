@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andrew F Harris</title>
 	<!-- favicons -->
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -25,7 +26,7 @@
 	<!-- end favicons -->
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
-    <link href="/include/styles.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 

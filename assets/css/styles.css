@@ -22,6 +22,12 @@ footer {
   color: gray;
 }
 
+@media(max-width: 600px) {
+	main, footer {
+		padding: 0 30px;
+	}
+}
+
 /* logo */
 div.logo {
 	height: 80px;
