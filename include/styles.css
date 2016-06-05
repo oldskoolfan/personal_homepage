@@ -1,8 +1,13 @@
+/* normalize.css (https://necolas.github.io/normalize.css) */
 @import url('https://necolas.github.io/normalize.css/4.1.1/normalize.css');
+
+/* main layout */
 html, body {
   height: 100%;
   overflow: auto;
-  font: 1em normal Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
 }
 main, footer {
   overflow: auto;
@@ -17,6 +22,21 @@ footer {
   color: gray;
 }
 
+/* logo */
+div.logo {
+	height: 80px;
+	width: 300px;
+	margin: 30px auto 0;
+	background-image: url('/assets/img/logo@1x.png');
+	background-size: contain;
+}
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+	div.logo {
+		background-image: url('/assets/img/logo@2x.png');
+	}
+}
+
+/* links */
 a {
   color: #5789b9;
   text-decoration: none;
@@ -26,13 +46,43 @@ a:hover {
   text-decoration: underline;
 }
 
-nav.vert a {
-  display: block;
-}
-nav.vert div {
+/* nav */
+nav.vert div:first-child {
   font-size: 1.1em;
   font-weight: bold;
 }
 nav.vert div, nav.vert a {
   padding: 5px 0;
 }
+
+/* admin section */
+
+	/* forms in general */
+	form {
+		text-align: left;
+	}
+	form label, form input[type="submit"] {
+		display: block;
+		margin: 20px 0;
+	}
+	form label input {
+		margin-left: 5px;
+	}
+
+	/* music page */
+	section#music_section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#album_form_btn, #song_form_btn {
+		display: block;
+		width: 180px;
+		margin: 10px 0;
+	}
+
+	#album_form, #song_form {
+		display: none;
+	}
+
+/* end admin section */
