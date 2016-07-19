@@ -25,8 +25,15 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- end favicons -->
 
+	<!-- fontawesome -->
+	<script src="https://use.fontawesome.com/c9ae3437bc.js"></script>
+
+	<!-- custom font -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
-    <link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
+
+	<!-- main styles -->
+	<link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
+
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
@@ -39,5 +46,6 @@
 	<script src="/assets/vendor/pikaday/pikaday.jquery.js"></script>
   </head>
   <body>
+  <div id="wrapper">
   <main>
 	  <a href="/"><div class="logo"></div></a>

@@ -7,4 +7,5 @@
   <div><a href="/music">Music</a></div>
   <div><a href="/games">Games</a></div>
 </nav>
+<p id="email-link"><a href="mailto:me@andrewfharris.com"><i class="fa fa-lg fa-envelope"></i>Email Me</a></p>
 <?php include "{$_SERVER['DOCUMENT_ROOT']}/include/footer.php" ?>

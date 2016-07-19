@@ -9,21 +9,43 @@ html, body {
   font-weight: normal;
   font-family: 'Open Sans', sans-serif;
 }
+div#wrapper {
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+}
 main, footer {
-  overflow: auto;
+  flex-shrink: 1;
   text-align: center;
 }
 main {
-  height: 95%;
+  flex-grow: 1;
 }
 footer {
-  height: 5%;
   font-size: 0.8em;
   color: gray;
+  flex-grow: 0;
+  padding: 1em 0;
+}
+
+hr {
+	max-width: 600px;
 }
 
 @media(max-width: 600px) {
 	main, footer {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	/*section#things-i-love {
+		padding: 0 !important;
+	}*/
+}
+@media(min-width: 601px) {
+	h1 {
 		padding: 0 30px;
 	}
 }
@@ -35,10 +57,17 @@ div.logo {
 	margin: 30px auto 0;
 	background-image: url('/assets/img/logo@1x.png');
 	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
 	div.logo {
 		background-image: url('/assets/img/logo@2x.png');
+	}
+}
+@media(max-width: 380px) {
+	div.logo {
+		width: 100%;
 	}
 }
 
@@ -50,6 +79,24 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+p#email-link, p#github-link {
+	margin: 2em 0;
+}
+a i.fa {
+	margin-right: 5px;
+}
+
+section#things-i-love {
+	letter-spacing: 1px;
+	line-height: 2em;
+	/*padding: 0 6em;*/
+	max-width: 600px;
+	margin: 0 auto;
+}
+section#things-i-love h4 {
+	margin-bottom: 0;
 }
 
 /* nav */
