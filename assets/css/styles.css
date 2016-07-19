@@ -11,11 +11,11 @@ html, body {
 }
 div#wrapper {
 	height: inherit;
-	display: flex;
-	flex-direction: column;
+	/*display: flex;				// flexbox just isn't working for sticky footer :(
+	flex-direction: column;*/
 }
 main, footer {
-  flex-shrink: 1;
+  /*flex-shrink: 1;*/
   text-align: center;
 }
 main {
