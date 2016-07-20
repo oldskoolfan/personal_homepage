@@ -2,52 +2,39 @@
 @import url('https://necolas.github.io/normalize.css/4.1.1/normalize.css');
 
 /* main layout */
+* {
+	box-sizing: border-box;
+}
 html, body {
-  height: 100%;
-  overflow: auto;
-  font-size: 1em;
-  font-weight: normal;
-  font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	overflow: auto;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
 }
 div#wrapper {
-	height: inherit;
-	/*display: flex;				// flexbox just isn't working for sticky footer :(
-	flex-direction: column;*/
+	min-height: 100%;
+	position: relative;
+	overflow: auto;
+	padding-bottom: 50px;
 }
 main, footer {
-  /*flex-shrink: 1;*/
-  text-align: center;
+	text-align: center;
 }
-main {
-  flex-grow: 1;
-}
+
 footer {
-  font-size: 0.8em;
-  color: gray;
-  flex-grow: 0;
-  padding: 1em 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 0.8em;
+	color: gray;
+	flex-grow: 0;
+	padding: 1em 0;
 }
 
 hr {
 	max-width: 600px;
-}
-
-@media(max-width: 600px) {
-	main, footer {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	h1 {
-		font-size: 1.5em;
-	}
-	/*section#things-i-love {
-		padding: 0 !important;
-	}*/
-}
-@media(min-width: 601px) {
-	h1 {
-		padding: 0 30px;
-	}
 }
 
 /* logo */
@@ -60,25 +47,15 @@ div.logo {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-	div.logo {
-		background-image: url('/assets/img/logo@2x.png');
-	}
-}
-@media(max-width: 380px) {
-	div.logo {
-		width: 100%;
-	}
-}
 
 /* links */
 a {
-  color: #5789b9;
-  text-decoration: none;
+	color: #5789b9;
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 p#email-link, p#github-link {
@@ -88,6 +65,7 @@ a i.fa {
 	margin-right: 5px;
 }
 
+/* specific element styling */
 section#things-i-love {
 	letter-spacing: 1px;
 	line-height: 2em;
@@ -101,11 +79,11 @@ section#things-i-love h4 {
 
 /* nav */
 nav.vert div:first-child {
-  font-size: 1.1em;
-  font-weight: bold;
+	font-size: 1.1em;
+	font-weight: bold;
 }
 nav.vert div, nav.vert a {
-  padding: 5px 0;
+	padding: 5px 0;
 }
 
 /* admin section */
@@ -139,3 +117,29 @@ nav.vert div, nav.vert a {
 	}
 
 /* end admin section */
+
+/* responsive media queries */
+@media(max-width: 600px) {
+	main, footer {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+}
+@media(min-width: 601px) {
+	h1 {
+		padding: 0 30px;
+	}
+}
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+	div.logo {
+		background-image: url('/assets/img/logo@2x.png');
+	}
+}
+@media(max-width: 380px) {
+	div.logo {
+		width: 100%;
+	}
+}
