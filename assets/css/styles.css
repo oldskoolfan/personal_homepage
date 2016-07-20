@@ -38,10 +38,18 @@ hr {
 }
 
 /* logo */
-div.logo {
+div#logo-wrapper {
 	height: 80px;
 	width: 300px;
 	margin: 30px auto 0;
+}
+div#logo-wrapper a {
+	height: inherit;
+	width: inherit;
+}
+div#logo {
+	height: inherit;
+	width: inherit;
 	background-image: url('/assets/img/logo@1x.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -70,7 +78,7 @@ section#things-i-love {
 	letter-spacing: 1px;
 	line-height: 2em;
 	/*padding: 0 6em;*/
-	max-width: 600px;
+	max-width: 615px;
 	margin: 0 auto;
 }
 section#things-i-love h4 {
@@ -134,12 +142,12 @@ nav.vert div, nav.vert a {
 	}
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-	div.logo {
+	div#logo {
 		background-image: url('/assets/img/logo@2x.png');
 	}
 }
 @media(max-width: 380px) {
-	div.logo {
+	div#logo-wrapper {
 		width: 100%;
 	}
 }

@@ -48,4 +48,6 @@
   <body>
   <div id="wrapper">
   <main>
-	  <a href="/"><div class="logo"></div></a>
+	  <div id="logo-wrapper">
+		  <a href="/"><div id="logo"></div></a>
+	  </div>

@@ -11,8 +11,9 @@
 	JHS Pedals &bull; People's Amp &bull; Disc golf &bull;
 	Dogs &bull; Star Trek &bull; Astronomy &bull;
 	Sci-Fi / Fantasy &bull; B Movies &bull; Nintendo &bull;
-	Arcade games &bull; Gardening &bull; Maria &amp; Oliver &bull;
+	Arcades &bull; Gardening &bull; Maria &amp; Oliver &bull;
 	Thrift Stores &bull; VHS &bull; Open Source &bull;
 	College &bull; Fishing &bull; <i class="fa fa-lg fa-bicycle"></i> &bull; Public transit &bull; National Public Radio
+	&bull; Board games
 </section>
 <?php include "{$_SERVER['DOCUMENT_ROOT']}/include/footer.php" ?>
