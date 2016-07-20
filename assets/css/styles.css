@@ -94,6 +94,38 @@ nav.vert div, nav.vert a {
 	padding: 5px 0;
 }
 
+/* music page */
+section#album-list article {
+	max-width: 500px;
+	margin: 60px auto;
+	background-color: #f2f2f2;
+	border-radius: 3px;
+	padding: 15px;
+}
+section#album-list article h3 {
+	margin-top: 0;
+	text-align: left;
+	text-transform: uppercase;
+}
+section#album-list article h3 span:last-of-type {
+	float: right;
+}
+section#album-list article div.song {
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 20px 0;
+}
+section#album-list article div.song span {
+	display: inline-block;
+	margin-right: 5px;
+}
+section#album-list article p {
+	text-align: left;
+	font-style: italic;
+	margin-bottom: 0;
+}
 /* admin section */
 
 	/* forms in general */

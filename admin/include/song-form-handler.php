@@ -29,7 +29,6 @@ if (isset($_FILES['song'])) {
 if ($result) {
 	$_SESSION['msg'] = 'Song saved successfully';
 } else {
-	// echo $con->error;
 	$_SESSION['msg'] = 'problem saving song';
 }
 header('Location: /admin/music.php');
