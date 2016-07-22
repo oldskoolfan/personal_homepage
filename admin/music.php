@@ -44,9 +44,11 @@
 		<label>Album
 			<select name="album">
 				<option></option>
-				<?php while($album = $albums->fetch_object()): ?>
-					<option value="<?=$album->album_id?>"><?=$album->album_title?></option>
-				<?php endwhile; $albums->data_seek(0); ?>
+				<?php if($albums): ?>
+					<?php while($album = $albums->fetch_object()): ?>
+						<option value="<?=$album->album_id?>"><?=$album->album_title?></option>
+					<?php endwhile; $albums->data_seek(0); ?>
+				<?php endif; ?>
 			</select>
 		</label>
 		<label>Recorded date:
