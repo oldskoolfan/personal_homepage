@@ -63,11 +63,13 @@
 <!-- albums -->
 <h3>My Albums</h3>
 <div class="albums">
-<?php while($album = $albums->fetch_object()): ?>
-	<div class="album-link">
-		<a href="album.php?id=<?=$album->album_id?>"><?=$album->album_title?></a>
-	</div>
-<?php endwhile; ?>
+<?php if($albums): ?>
+	<?php while($album = $albums->fetch_object()): ?>
+		<div class="album-link">
+			<a href="album.php?id=<?=$album->album_id?>"><?=$album->album_title?></a>
+		</div>
+	<?php endwhile; ?>
+<?php endif; ?>
 </div>
 </section>
 <script src="assets/js/main.js"></script>
