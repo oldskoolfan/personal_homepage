@@ -12,6 +12,7 @@
 	<div><a href="http://php.net" target="_blank">Official PHP documentation</a></div>
 	<div><a href="http://www.w3schools.com/php/default.asp" target="_blank">W3Schools PHP reference and tutorial</a></div>
 	<div><a href="https://www.codecademy.com/learn/php" target="_blank">Codecademy PHP interactive tutorial</a></div>
+	<div><a href="http://www.phptherightway.com" target="_blank">Php the Right Way - a wealth of information</a></div>
   </nav>
 
 <?php include "{$_SERVER['DOCUMENT_ROOT']}/include/footer.php" ?>
