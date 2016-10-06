@@ -14,8 +14,8 @@
 		<?php foreach($album['songs'] as $song): ?>
 			<div class="song">
 				<span><?=$song['song_title']?></span>
-				<audio controls preload="auto">
-					<source src="/include/get-audio.php?id=<?=$song['song_id']?>" type="audio/mpeg">
+				<audio controls>
+					<source src="/assets/songs/<?=$song['filename']?>" type="audio/mpeg">
 				</audio>
 			</div>
 		<?php endforeach; ?>

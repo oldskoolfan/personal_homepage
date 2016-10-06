@@ -7,7 +7,8 @@ $result = $con->query(
 	s.song_title,
 	s.recorded_date,
 	s.file_type,
-	s.credits
+	s.credits,
+	s.filename
 from albums as a join songs as s using(album_id)');
 $albums = [];
 $currentAlbumId = null;
@@ -33,7 +34,7 @@ foreach($result as $row) {
 		"song_id" => $row['song_id'],
 		"song_title" => $row['song_title'],
 		"recorded_date" => $row['recorded_date'],
-		//"audio" => 'longblob',
+		"filename" => $row['filename'],
 		"file_type" => $row['file_type'],
 		"credits" => $row['credits']
 	]);
