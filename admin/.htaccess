@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "andrewfharris.com - admin"
-AuthUserFile /etc/.htpasswd
-Require valid-user

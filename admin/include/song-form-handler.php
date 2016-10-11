@@ -15,7 +15,6 @@ if (isset($_FILES['song'])) {
 	$tmpPath = $_FILES['song']['tmp_name'];
 	$destPath = "$root/assets/songs/$filename";
 	$type = $_FILES['song']['type'];
-	var_dump($_FILES['song']);
 	if (file_exists($tmpPath) && move_uploaded_file($tmpPath, $destPath)) {
 		$stmt = $con->prepare('insert into songs(song_title,
 			album_id, recorded_date, filename, file_type,

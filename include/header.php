@@ -1,4 +1,7 @@
-<?php //error_reporting(0) ?>
+<?php
+$config = parse_ini_file("{$_SERVER['DOCUMENT_ROOT']}/config.ini");
+error_reporting($config['error_reporting']);
+?>
 <!doctype html>
 <html>
   <head>
