@@ -44,6 +44,9 @@ error_reporting($config['error_reporting']);
 	<!-- moment.js -->
 	<script src="/assets/vendor/momentjs/moment.js"></script>
 
+	<!-- ckeditor -->
+	<script src="/assets/vendor/ckeditor/ckeditor.js"></script>
+
 	<!-- https://github.com/dbushell/Pikaday/blob/master/index.html -->
 	<link href="/assets/vendor/pikaday/pikaday.css" rel="stylesheet" type="text/css">
 	<script src="/assets/vendor/pikaday/pikaday.js"></script>

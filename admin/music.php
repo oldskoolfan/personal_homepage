@@ -6,12 +6,10 @@
 	$albums = $con->query('select * from albums');
 ?>
 <h1>Music Admin</h1>
+<a href="/admin">Go Back</a>
 <section id="music_section" class="form-wrapper">
 
 <?php
-	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-		include "include/music-form-handler.php";
-	}
 	if (isset($_SESSION['msg'])) {
 		$msg = $_SESSION['msg'];
 		echo "<script>alert('$msg')</script>";

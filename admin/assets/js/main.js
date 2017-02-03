@@ -6,10 +6,13 @@
 	};
 
 	var formHandler = function() {
-		var btnIds = '#album_form_btn,#song_form_btn';
-		var createButtons = function() {
-			var btnIdArr = btnIds.split(','),
-				btns = {};
+		//var btnIds = '#album_form_btn,#song_form_btn,#thought_form_btn';
+		var btnIds = [];
+		$('[id$="form_btn"]').each(function(i, el) {
+			btnIds.push('#' + $(el).attr('id'));
+		});
+		var createButtons = function(btnIdArr) {
+			var btns = {};
 			btnIdArr.forEach(function(id) {
 				btns[id] = new Button();
 			});
@@ -17,7 +20,7 @@
 		};
 		return {
 			btnIds: btnIds,
-			btns: createButtons(),
+			btns: createButtons(btnIds),
 			toggleForm: function() {
 				var id = this.id.substring(0, this.id.lastIndexOf('_'));
 				$('#' + id).slideToggle('fast', formHandler.slideComplete);
@@ -40,11 +43,18 @@
 			btn.text = $(id).text();
 		}
 
-		$(formHandler.btnIds).on('click', formHandler.toggleForm);
+		$(formHandler.btnIds.join()).on('click', formHandler.toggleForm);
 
 		// datepicker
 		$('#recorded_date').pikaday({
 			format: 'YYYY-MM-DD'
+		});
+
+		// ckeditor
+		CKEDITOR.replace('content', {
+			extraPlugins: 'uploadimage',
+			imageUploadUrl: '/admin/include/upload.php',
+			filebrowserUploadUrl: '/admin/include/upload.php'
 		});
 	});
 })();

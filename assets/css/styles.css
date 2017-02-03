@@ -5,6 +5,7 @@
 * {
 	box-sizing: border-box;
 }
+
 html, body {
 	height: 100%;
 	overflow: auto;
@@ -12,12 +13,18 @@ html, body {
 	font-weight: normal;
 	font-family: 'Open Sans', sans-serif;
 }
+
+h1 {
+	font-size: 1.5em;
+}
+
 div#wrapper {
 	min-height: 100%;
 	position: relative;
 	overflow: auto;
 	padding-bottom: 50px;
 }
+
 main, footer {
 	text-align: center;
 }
@@ -43,10 +50,12 @@ div#logo-wrapper {
 	width: 300px;
 	margin: 30px auto 0;
 }
+
 div#logo-wrapper a {
 	height: inherit;
 	width: inherit;
 }
+
 div#logo {
 	height: inherit;
 	width: inherit;
@@ -69,6 +78,7 @@ a:hover {
 p#email-link, p#github-link {
 	margin: 2em 0;
 }
+
 a i.fa {
 	margin-right: 5px;
 }
@@ -81,6 +91,7 @@ section#things-i-love {
 	max-width: 615px;
 	margin: 0 auto;
 }
+
 section#things-i-love h4 {
 	margin-bottom: 0;
 }
@@ -90,6 +101,7 @@ nav.vert div:first-child {
 	font-size: 1.1em;
 	font-weight: bold;
 }
+
 nav.vert div, nav.vert a {
 	padding: 5px 0;
 }
@@ -102,14 +114,17 @@ section#album-list article {
 	border-radius: 3px;
 	padding: 15px;
 }
+
 section#album-list article h3 {
 	margin-top: 0;
 	text-align: left;
 	text-transform: uppercase;
 }
+
 section#album-list article h3 span:last-of-type {
 	float: right;
 }
+
 section#album-list article div.song {
 	text-align: right;
 	display: flex;
@@ -117,72 +132,117 @@ section#album-list article div.song {
 	justify-content: flex-end;
 	margin: 20px 0;
 }
+
 section#album-list article div.song span {
 	display: inline-block;
 	margin-right: 5px;
 }
+
 section#album-list article p {
 	text-align: left;
 	font-style: italic;
 	margin-bottom: 0;
 }
+
+/* thoughts page */
+#thought-list {
+	padding: 0 60px 30px;
+}
+
+#thought-list article {
+	padding: 30px 0 0;
+	margin: 30px 0 0;
+	border-top: 1px solid #ccc;
+}
+
+/*#thought-list article:first-of-type {
+	margin: 0;
+}*/
+
+/*#thought-list article:not(:last-of-type) {
+	border-bottom: 1px solid #ccc;
+}*/
+
+#thought-list article h3 {
+	position: relative;
+	margin-top: 0;
+}
+
+#thought-list article h3 span:first-child {
+	text-transform: uppercase;
+}
+
+#thought-list article h3 span:last-child {
+	position: absolute;
+	right: 0;
+}
+
+#thought-list article div.content {
+	text-align: left;
+}
+
 /* admin section */
-	.error {
-		font-weight: bold;
-		color: red;
-	}
+.error {
+	font-weight: bold;
+	color: red;
+}
 
-	/* forms in general */
-	form {
-		text-align: left;
-	}
-	form label, form input[type="submit"] {
-		display: block;
-		margin: 20px 0;
-	}
-	form label input {
-		margin-left: 5px;
-	}
-	form textarea {
-		border: 1px solid #ddd;
-		width: 100%;
-		padding: 5px;
-	}
+/* forms in general */
+form {
+	text-align: left;
+}
 
-	table {
-		width: 100%;
-		max-width: 600px;
-		margin: 0 auto;
-		border-collapse: collapse;
-	}
-	table td {
-		border: 1px solid #ccc;
-		padding: 10px;
-	}
+form label, form input[type="submit"] {
+	display: block;
+	margin: 20px 0;
+}
 
-	/* music page */
-	section.form-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	#album_form_btn, #song_form_btn {
-		display: block;
-		width: 180px;
-		margin: 10px 0;
-	}
+form label input {
+	margin-left: 5px;
+}
 
-	#album_form, #song_form {
-		display: none;
-	}
-	table#songs {
-		margin-top: 60px;
-		margin-bottom: 60px;
-	}
-	table#songs td:first-of-type {
-		text-align: left;
-	}
+form textarea {
+	border: 1px solid #ddd;
+	width: 100%;
+	padding: 5px;
+}
 
+table {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table td {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+section.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+[id$="form_btn"] {
+	display: block;
+	width: 180px;
+	margin: 10px 0;
+}
+
+[id$="_form"] {
+	display: none;
+}
+
+table#songs {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+table#songs td:first-of-type {
+	text-align: left;
+}
 /* end admin section */
 
 /* responsive media queries */
@@ -191,20 +251,29 @@ section#album-list article p {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	h1 {
-		font-size: 1.5em;
+
+	#thought-list {
+		padding: 0;
+	}
+
+	#thought-list article h3 span {
+		display: block;
+		position: static !important;
 	}
 }
+
 @media(min-width: 601px) {
 	h1 {
 		padding: 0 30px;
 	}
 }
+
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
 	div#logo {
 		background-image: url('/assets/img/logo@2x.png');
 	}
 }
+
 @media(max-width: 380px) {
 	div#logo-wrapper {
 		width: 100%;

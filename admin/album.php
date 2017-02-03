@@ -27,7 +27,7 @@
 	}
 ?>
 <h1>Album Admin</h1>
-<a href="music.php">BACK</a>
+<a href="music.php">Go Back</a>
 <section class="form-wrapper">
 <?php include 'include/album-form.php' ?>
 </section>
