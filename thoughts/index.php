@@ -1,8 +1,7 @@
 <?php
 	include "{$_SERVER['DOCUMENT_ROOT']}/include/header.php";
 	include "{$_SERVER['DOCUMENT_ROOT']}/include/get-thoughts.php";
-
-
+	include "{$_SERVER['DOCUMENT_ROOT']}/include/nav.php";
 ?>
 <section id="thought-list">
 <h1>My Thoughts</h1>

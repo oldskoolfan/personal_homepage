@@ -1,5 +1,6 @@
 <?php include "{$_SERVER['DOCUMENT_ROOT']}/include/header.php" ?>
-  <h1>CSCI 2412 - Web Database Development</h1>
+<?php include "{$_SERVER['DOCUMENT_ROOT']}/include/nav.php" ?>
+<h1>CSCI 2412 - Web Database Development</h1>
   <nav class="vert">
 	<div>Term Project Samples</div>
 	<div><a href="samples/ecommerce">Ecommerce Site</a></div>
