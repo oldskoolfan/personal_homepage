@@ -1,4 +1,7 @@
-<?php //error_reporting(0) ?>
+<?php
+$config = parse_ini_file("{$_SERVER['DOCUMENT_ROOT']}/config.ini");
+error_reporting($config['error_reporting']);
+?>
 <!doctype html>
 <html>
   <head>
@@ -40,6 +43,9 @@
 
 	<!-- moment.js -->
 	<script src="/assets/vendor/momentjs/moment.js"></script>
+
+	<!-- ckeditor -->
+	<script src="/assets/vendor/ckeditor/ckeditor.js"></script>
 
 	<!-- https://github.com/dbushell/Pikaday/blob/master/index.html -->
 	<link href="/assets/vendor/pikaday/pikaday.css" rel="stylesheet" type="text/css">

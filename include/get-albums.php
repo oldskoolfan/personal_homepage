@@ -7,7 +7,7 @@ $result = $con->query(
 	s.song_title,
 	s.recorded_date,
 	s.file_type,
-	s.credits,
+	a.credits,
 	s.filename
 from albums as a join songs as s using(album_id)');
 $albums = [];

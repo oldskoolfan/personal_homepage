@@ -1,6 +1,7 @@
 <?php
 	include "{$_SERVER['DOCUMENT_ROOT']}/include/header.php";
 	include "{$_SERVER['DOCUMENT_ROOT']}/include/get-albums.php";
+	include "{$_SERVER['DOCUMENT_ROOT']}/include/nav.php";
 ?>
 <section id="album-list">
 <h1>My Music</h1>
