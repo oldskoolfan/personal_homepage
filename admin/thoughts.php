@@ -28,7 +28,8 @@
 	<?php if($thoughts): ?>
 		<?php while($thought = $thoughts->fetch_object()): ?>
 			<div class="thought-link">
-				<a href="thought.php?id=<?=$thought->thought_id?>"><?=$thought->thought_title?></a>
+				<a href="thought.php?id=<?=$thought->thought_id?>"><?=$thought->thought_title?></a> |
+				<a href="delete.php?entity=thought&id=<?=$thought->thought_id?>" onclick="return confirm('Are you sure?');">Delete</a>
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>

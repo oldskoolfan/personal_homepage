@@ -10,6 +10,12 @@
 	display: none;
 }
 
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
 html, body {
 	height: 100%;
 	overflow: auto;
@@ -162,17 +168,14 @@ section#album-list article p {
 	border-top: 1px solid #ccc;
 }
 
-/*#thought-list article:first-of-type {
-	margin: 0;
-}*/
-
-/*#thought-list article:not(:last-of-type) {
-	border-bottom: 1px solid #ccc;
-}*/
-
 #thought-list article h3 {
 	position: relative;
 	margin-top: 0;
+	text-align: left;
+}
+
+#thought-list article h3 span {
+	display: block;
 }
 
 #thought-list article h3 span:first-child {
@@ -180,8 +183,7 @@ section#album-list article p {
 }
 
 #thought-list article h3 span:last-child {
-	position: absolute;
-	right: 0;
+	font-weight: normal;
 }
 
 #thought-list article div.content {
@@ -248,6 +250,10 @@ table#songs {
 }
 
 table#songs td:first-of-type {
+	text-align: left;
+}
+
+div.thoughts {
 	text-align: left;
 }
 /* end admin section */
