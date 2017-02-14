@@ -5,7 +5,7 @@
 	include "$root/include/db-connect.php";
 	$thoughts = $con->query('select * from thoughts');
 ?>
-<h1>Music Admin</h1>
+<h1>Thought Admin</h1>
 <a href="/admin">Go Back</a>
 <section id="music_section" class="form-wrapper">
 	<?php
