@@ -2,7 +2,8 @@
 <?php include "{$_SERVER['DOCUMENT_ROOT']}/include/nav.php" ?>
 <h1>CSCI 2412 - Web Database Development</h1>
   <nav class="vert">
-	<div>Term Project Samples - COMING SOON</div>
+	<div>Term Project Examples</div>
+	<div><a href="samples/blog2.0">Blog</a></div>
   </nav>
   <br>
   <nav class="vert">
