@@ -94,6 +94,10 @@ a i.fa {
 }
 
 /* specific element styling */
+section#welcome-msg {
+	margin: 2em 0;
+}
+
 section#things-i-love {
 	letter-spacing: 1px;
 	line-height: 2em;
@@ -113,6 +117,7 @@ nav {
 nav.vert div:first-child {
 	font-size: 1.1em;
 	font-weight: bold;
+	color: #000;
 }
 
 nav.vert div, nav.vert a {
