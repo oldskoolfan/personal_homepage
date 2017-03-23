@@ -1,3 +1,6 @@
 [submodule "csci2412/samples/blog2.0"]
 	path = csci2412/samples/blog2.0
 	url = https://github.com/oldskoolfan/blog2.0
+[submodule "csci2412/samples/pagination"]
+	path = csci2412/samples/pagination
+	url = https://github.com/oldskoolfan/pagination-example.git

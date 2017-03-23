@@ -4,6 +4,7 @@
   <nav class="vert">
 	<div>Term Project Examples</div>
 	<div><a href="samples/blog2.0">Blog</a></div>
+	<div><a href="samples/pagination">Pagination Example</a></div>
   </nav>
   <br>
   <nav class="vert">
