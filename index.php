@@ -4,6 +4,6 @@
 <section id="welcome-msg">
 	<p>Welcome to the homepage of Andrew F Harris</p>
 </section>
-<p id="email-link"><a href="mailto:me@andrewfharris.com"><i class="fa fa-lg fa-envelope"></i>Email Me</a></p>
+<p id="email-link"><a href="mailto:andrew@andrewfharris.com"><i class="fa fa-lg fa-envelope"></i>Email Me</a></p>
 
 <?php include "{$_SERVER['DOCUMENT_ROOT']}/include/footer.php" ?>
